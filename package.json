@@ -1,5 +1,5 @@
 {
-  "name": "markum.pl",
+  "name": "pk-program",
   "private": true,
   "scripts": {
     "dev": "next dev",
