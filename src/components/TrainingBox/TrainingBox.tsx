@@ -15,7 +15,7 @@ const TrainingBox = ({ type, link, content }: Props) => {
 
   return (
     <div className={`${styles.box} ${content ? '!overflow-auto' : ''}`}>
-      {type === TrainingTypes.video ? !isError || navigator?.onLine ? (
+      {type === TrainingTypes.video ? !isError && navigator?.onLine ? (
           <ReactPlayer
             className='!w-full !h-full'
             controls
