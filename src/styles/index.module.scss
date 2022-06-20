@@ -1,0 +1,17 @@
+.title {
+  @apply text-center text-xl w-full;
+  max-width: 498px;
+  margin-bottom: 40.5px;
+}
+
+.btnBox {
+  @apply grid justify-items-center gap-4 m-4 mb-0;
+}
+
+.startP {
+  @apply absolute top-8 left-10 text-lg;
+}
+
+.introBox {
+  @apply relative;
+}
