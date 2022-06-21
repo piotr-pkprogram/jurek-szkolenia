@@ -2,6 +2,7 @@ import { TrainingTypes } from 'src/components/TrainingBtn/TrainingBtn';
 import ytIcon from 'public/img/youtube-icon.svg';
 import loomIcon from 'public/img/loom-Logo.svg';
 import zoomIcon from 'public/img/zoom-icon.svg';
+import pdfIcon from 'public/img/pdf.svg';
 import { v4 as uuidv4 } from 'uuid';
 
 type Training = {
@@ -42,5 +43,12 @@ export const trainings: Training[] = [
     platformIcon: zoomIcon,
     name: 'Szkolenie, jak skutecznie umawiać spotkania',
     link: 'https://us02web.zoom.us/rec/play/ydjDHD4E5C6sjYeNmvNRXPTtAnKLjy_9eNCy_gk-muZaMRPIohoqj-W4KT5xY53v007s8JFYYBGDnuo5.jikK56LvFMDxDnw0?autoplay=true&startTime=1654186214000'
+  },
+  {
+    id: uuidv4(),
+    type: TrainingTypes.pdf,
+    platformIcon: pdfIcon,
+    name: 'Umawianie Spotkań KWŻ',
+    link: '/uploads/Umawianie-Spotkań-KWŻ.pdf'
   }
 ];
