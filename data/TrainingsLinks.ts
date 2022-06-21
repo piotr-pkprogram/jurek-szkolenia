@@ -16,18 +16,18 @@ type Training = {
 export const trainings: Training[] = [
   {
     id: uuidv4(),
+    type: TrainingTypes.iframe,
+    platformIcon: loomIcon,
+    name: "Nagranie omawiające produkty (Jurek Krzewicki)",
+    link: "https://www.loom.com/embed/2374b205158d4673ae986224edbdf2fc"
+  },
+  {
+    id: uuidv4(),
     type: TrainingTypes.video,
     platformIcon: ytIcon,
     name: "Konferencja dr. Piotra Kardasza \n" +
       "kampanii zdrowia „Żyje świadomie”",
     link: "https://youtu.be/tGMu-acd0SU"
-  },
-  {
-    id: uuidv4(),
-    type: TrainingTypes.iframe,
-    platformIcon: loomIcon,
-    name: "Nagranie omawiające produkty (Jurek Krzewicki)",
-    link: "https://www.loom.com/embed/2374b205158d4673ae986224edbdf2fc"
   },
   {
     id: uuidv4(),
