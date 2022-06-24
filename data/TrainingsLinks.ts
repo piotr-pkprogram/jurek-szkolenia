@@ -39,10 +39,10 @@ export const trainings: Training[] = [
   },
   {
     id: uuidv4(),
-    type: TrainingTypes.iframe,
+    type: TrainingTypes.video,
     platformIcon: zoomIcon,
     name: 'Szkolenie, jak skutecznie umawiać spotkania',
-    link: 'https://us02web.zoom.us/rec/play/ydjDHD4E5C6sjYeNmvNRXPTtAnKLjy_9eNCy_gk-muZaMRPIohoqj-W4KT5xY53v007s8JFYYBGDnuo5.jikK56LvFMDxDnw0?autoplay=true&startTime=1654186214000'
+    link: '/uploads/GMT20220602-161014_Recording_1760x900.mp4'
   },
   {
     id: uuidv4(),

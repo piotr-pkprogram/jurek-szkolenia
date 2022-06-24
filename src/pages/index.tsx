@@ -10,8 +10,8 @@ import styles from 'src/styles/index.module.scss';
 const Home: NextPage = () => {
   return (
     <main>
-      <h1 className={styles.title}>“Najlepszym Przewidywaniem Przyszłości
-        jest jej kierowanie”</h1>
+      <h1 className={styles.title}>“Najlepszym sposobem na przewidywanie przyszłości
+        jest jej kreowanie”</h1>
       <Image src={materials}
              alt={'Grafika wspólnie pracującego zespołu przy jakimś biurku i tablicy z rozpisanymi danymi zawierając tekst "O to Twój zestaw  materiałów"'}
              width={292.5} height={183} />
