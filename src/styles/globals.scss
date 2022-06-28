@@ -46,8 +46,13 @@ label,
 article,
 address,
 sub,
-sup {
+sup,
+p {
   @apply font-bold italic text-main;
+
+  &::selection {
+    @apply bg-main text-white;
+  }
 }
 
 strong {
@@ -61,10 +66,19 @@ svg {
   }
 }
 
+div#__next {
+  @apply grid justify-items-center;
+}
+
 main {
-  @apply grid justify-items-center items-center p-6 h-full bg-no-repeat bg-center;
-  background-size: 892.5px auto;
+  @apply grid justify-items-center items-center p-6 h-full bg-no-repeat bg-center relative;
+  background-size: 1190px auto;
   background-image: url('../../public/img/Background.jpg');
   min-height: 913px;
   padding-bottom: 98px;
+  max-width: 1190px;
+
+  @media (min-width: 1190px) {
+    width: 1190px;
+  }
 }

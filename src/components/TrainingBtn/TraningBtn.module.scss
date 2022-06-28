@@ -1,15 +1,15 @@
 .btn {
   @apply grid grid-flow-col bg-white px-3 py-6 rounded-3xl gap-3 items-center hover:shadow-lg-training transition-shadow justify-start;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  width: 486px;
+  width: 300px;
 
   @media (max-width: 615px) {
     @apply w-full;
-    max-width: 486px;
+    max-width: 300px;
   }
 
   &Paragraph {
-    @apply font-semibold text-main text-base text-left text-lg not-italic;
+    @apply font-semibold text-main text-base text-left not-italic;
   }
 }
 

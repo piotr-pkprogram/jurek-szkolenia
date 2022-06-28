@@ -3,6 +3,8 @@ import ytIcon from 'public/img/youtube-icon.svg';
 import loomIcon from 'public/img/loom-Logo.svg';
 import zoomIcon from 'public/img/zoom-icon.svg';
 import pdfIcon from 'public/img/pdf.svg';
+import documentIcon from 'public/img/document-icon.svg';
+import styles from 'src/styles/trainings.module.scss';
 import { v4 as uuidv4 } from 'uuid';
 
 type Training = {
@@ -10,7 +12,7 @@ type Training = {
   type: TrainingTypes;
   platformIcon: StaticImageData;
   name: string;
-  html?: JSX.Element | JSX.Element[];
+  content?: JSX.Element | JSX.Element[];
   link?: string;
 }
 
@@ -50,5 +52,22 @@ export const trainings: Training[] = [
     platformIcon: pdfIcon,
     name: 'Umawianie Spotkań KWŻ',
     link: '/uploads/Umawianie-Spotkań-KWŻ.pdf'
+  },
+  {
+    id: uuidv4(),
+    type: TrainingTypes.iframe,
+    platformIcon: loomIcon,
+    name: 'Materiał dodatkowy "plan wynagrodzeń"',
+    link: 'https://www.loom.com/embed/06281ac0fc0d4f5bbe0a7d58d5f633a9'
+  },
+  {
+    id: uuidv4(),
+    type: TrainingTypes.htmlText,
+    platformIcon: documentIcon,
+    name: 'Materiały Uzupełniające',
+    content: <div className={styles.box}>
+      <p className={styles.p}>Nagranie produktowe 43 minuty (zdrowie)</p>
+      <a className={styles.link} href={'https://youtu.be/kGK5E93HrN8'}>https://youtu.be/kGK5E93HrN8</a>
+    </div>
   }
 ];

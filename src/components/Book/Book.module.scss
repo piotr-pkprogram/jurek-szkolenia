@@ -1,0 +1,12 @@
+.box {
+  @apply grid grid-flow-col items-center;
+  grid-auto-columns: max-content;
+}
+
+.imgBox {
+  @apply relative w-max;
+}
+
+.p {
+  max-width: 225px;
+}

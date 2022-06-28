@@ -4,12 +4,14 @@ import materials from 'public/img/introduction-img.svg';
 import arrow from 'public/img/arrow.svg';
 import { trainings } from 'data/TrainingsLinks';
 import TrainingBtn from 'src/components/TrainingBtn/TrainingBtn';
+import Book from 'src/components/Book/Book';
 import shortArrow from 'public/img/short-arrow.svg';
 import styles from 'src/styles/index.module.scss';
+import { books } from 'data/books';
 
 const Home: NextPage = () => {
   return (
-    <main>
+    <main className={'relative'}>
       <h1 className={styles.title}>“Najlepszym sposobem na przewidywanie przyszłości
         jest jej kreowanie”</h1>
       <Image src={materials}
@@ -21,10 +23,16 @@ const Home: NextPage = () => {
       </div>
       {trainings.map((t, i) => (
         <div key={t.id} className={`${styles.btnBox} ${i === 0 ? '!mt-2' : ''}`}>
-          <TrainingBtn type={t.type} platformIcon={t.platformIcon} name={t.name} link={t.link} html={t.html} />
+          <TrainingBtn {...t} />
           {i === trainings.length - 1 ? '' : (<Image src={shortArrow} alt={''} />)}
         </div>
       ))}
+      <div className={styles.booksContainer}>
+        <p>Rekomendowane książki</p>
+        {books.map(b => (
+          <Book key={b.id} {...b} />
+        ))}
+      </div>
     </main>
   );
 };

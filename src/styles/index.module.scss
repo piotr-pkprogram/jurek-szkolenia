@@ -15,3 +15,7 @@
 .introBox {
   @apply relative;
 }
+
+.booksContainer {
+  @apply absolute left-5 bottom-36 grid gap-2 bg-white rounded-2xl p-2;
+}

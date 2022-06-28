@@ -48,6 +48,7 @@ module.exports = {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
+      blue: colors.blue,
       main: '#001C54',
       gray: '#E5E5E5',
     }),
@@ -116,7 +117,7 @@ module.exports = {
       64: '16rem',
       72: '18rem',
       80: '20rem',
-      96: '24rem'
+      96: '24rem',
     },
     animation: {
       none: 'none',

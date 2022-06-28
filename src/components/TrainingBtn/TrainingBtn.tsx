@@ -17,13 +17,12 @@ type Props = {
   type: TrainingTypes;
   platformIcon: StaticImageData;
   name: string;
-  html?: JSX.Element | JSX.Element[];
+  content?: JSX.Element | JSX.Element[];
   link?: string;
 }
 
-const TrainingBtn = (props: Props) => {
+const TrainingBtn = ({ type, platformIcon, name, link, content }: Props) => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
-
   const [body, setBody] = useState<HTMLBodyElement>();
 
   useEffect(() => {
@@ -31,12 +30,12 @@ const TrainingBtn = (props: Props) => {
     setBody(body as HTMLBodyElement);
   }, []);
 
-  if (props.type === TrainingTypes.pdf)
+  if (type === TrainingTypes.pdf)
     return (
       <>
-        <a className={styles.btn} href={props.link}>
-          <Image className={styles.btnIcon} src={props.platformIcon} alt={''} height={50} width={49.5} />
-          <p className={styles.btnParagraph}>{props.name}</p>
+        <a className={styles.btn} href={link}>
+          <Image className={styles.btnIcon} src={platformIcon} alt={''} height={50} width={49.5} />
+          <p className={styles.btnParagraph}>{name}</p>
         </a>
         {isVisible && body ? ReactDOM.createPortal(
           <div className={styles.modal}>
@@ -45,7 +44,7 @@ const TrainingBtn = (props: Props) => {
               className='absolute z-20 h-12 w-12 top-5 right-5'
               onClick={() => setIsVisible(false)}
             />
-            <TrainingBox {...props} />
+            <TrainingBox type={type} link={link} content={content} />
           </div>
           , body as HTMLBodyElement) : null}
       </>
@@ -54,8 +53,8 @@ const TrainingBtn = (props: Props) => {
   else return (
     <>
       <button className={styles.btn} onClick={() => setIsVisible(true)}>
-        <Image className={styles.btnIcon} src={props.platformIcon} alt={''} height={50} width={49.5} />
-        <p className={styles.btnParagraph}>{props.name}</p>
+        <Image className={styles.btnIcon} src={platformIcon} alt={''} height={50} width={49.5} />
+        <p className={styles.btnParagraph}>{name}</p>
       </button>
       {isVisible && body ? ReactDOM.createPortal(
         <div className={styles.modal}>
@@ -64,7 +63,7 @@ const TrainingBtn = (props: Props) => {
             className='absolute z-20 h-12 w-12 top-5 right-5'
             onClick={() => setIsVisible(false)}
           />
-          <TrainingBox {...props} />
+          <TrainingBox type={type} link={link} content={content} />
         </div>
         , body as HTMLBodyElement) : null}
     </>
