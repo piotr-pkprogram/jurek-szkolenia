@@ -1,5 +1,5 @@
 .box {
-  @apply grid grid-flow-col items-center;
+  @apply grid grid-flow-col items-center z-0;
   grid-auto-columns: max-content;
 }
 

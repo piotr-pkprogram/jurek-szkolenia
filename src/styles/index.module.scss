@@ -5,7 +5,7 @@
 }
 
 .btnBox {
-  @apply grid justify-items-center gap-4 m-4 mb-0;
+  @apply grid justify-items-center gap-4 m-4 mb-0 z-10;
 }
 
 .startP {
@@ -17,5 +17,9 @@
 }
 
 .booksContainer {
-  @apply absolute left-5 bottom-36 grid gap-2 bg-white rounded-2xl p-2;
+  @apply grid gap-2 bg-white rounded-2xl p-2 mt-10;
+
+  @media (min-width: 1010px) {
+    @apply absolute left-5 bottom-36;
+  }
 }
