@@ -17,9 +17,16 @@
 }
 
 .booksContainer {
-  @apply grid gap-2 bg-white rounded-2xl p-2 mt-10;
+  @apply grid gap-3 bg-white rounded-2xl px-3 py-4 mt-10;
 
   @media (min-width: 1010px) {
     @apply absolute left-5 bottom-36;
+
+    &::before {
+      @apply content-[''] bg-no-repeat bg-cover absolute -right-3 top-14;
+      background-image: url(../../public/img/down-right-arrow.png);
+      height: 32px;
+      width: 32px;
+    }
   }
 }

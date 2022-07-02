@@ -1,5 +1,5 @@
 .box {
-  @apply grid grid-flow-col items-center z-0 cursor-pointer;
+  @apply grid grid-flow-col items-center z-0 cursor-pointer hover:shadow-lg transition-shadow rounded-lg h-max;
   grid-auto-columns: max-content;
 }
 

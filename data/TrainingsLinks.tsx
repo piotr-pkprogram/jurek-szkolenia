@@ -55,17 +55,14 @@ export const trainings: Training[] = [
   },
   {
     id: uuidv4(),
-    type: TrainingTypes.iframe,
-    platformIcon: loomIcon,
-    name: 'Materiał dodatkowy "plan wynagrodzeń"',
-    link: 'https://www.loom.com/embed/06281ac0fc0d4f5bbe0a7d58d5f633a9'
-  },
-  {
-    id: uuidv4(),
     type: TrainingTypes.htmlText,
     platformIcon: documentIcon,
     name: 'Materiały Uzupełniające',
     content: <div className={styles.box}>
+      <p className={styles.p}>Plan Wynagrodzeń</p>
+      <a className={styles.link} href={'https://www.loom.com/embed/06281ac0fc0d4f5bbe0a7d58d5f633a9'}>https://www.loom.com/embed/06281ac0fc0d4f5bbe0a7d58d5f633a9</a>
+      <br />
+      <br />
       <p className={styles.p}>Nagranie produktowe 43 minuty (zdrowie)</p>
       <a className={styles.link} href={'https://youtu.be/kGK5E93HrN8'}>https://youtu.be/kGK5E93HrN8</a>
     </div>
