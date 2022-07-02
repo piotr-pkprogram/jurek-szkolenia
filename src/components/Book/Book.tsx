@@ -12,7 +12,7 @@ type Props = {
 
 const book = ({ name, image, link, alt }: Props) => (
   <Link href={link} passHref>
-    <div className={styles.box}>
+    <div className={styles.box} title={'kliknij tutaj'}>
       <div className={styles.imgBox}>
         <Image className={'rounded-2xl'} src={image} alt={alt} width={'80'} height={'80'} objectFit={'contain'} />
       </div>
