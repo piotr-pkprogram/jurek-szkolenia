@@ -19,9 +19,11 @@ type Props = {
   name: string;
   content?: JSX.Element | JSX.Element[];
   link?: string;
+  title?: string;
+  description?: string;
 }
 
-const TrainingBtn = ({ type, platformIcon, name, link, content }: Props) => {
+const TrainingBtn = ({ type, platformIcon, name, link, content, title, description }: Props) => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
   const [body, setBody] = useState<HTMLBodyElement>();
 
@@ -30,29 +32,9 @@ const TrainingBtn = ({ type, platformIcon, name, link, content }: Props) => {
     setBody(body as HTMLBodyElement);
   }, []);
 
-  if (type === TrainingTypes.pdf)
-    return (
-      <>
-        <a className={styles.btn} href={link}>
-          <Image className={styles.btnIcon} src={platformIcon} alt={''} height={50} width={49.5} />
-          <p className={styles.btnParagraph}>{name}</p>
-        </a>
-        {isVisible && body ? ReactDOM.createPortal(
-          <div className={styles.modal}>
-            <IconButton
-              svg={close}
-              className='absolute z-20 h-12 w-12 top-5 right-5'
-              onClick={() => setIsVisible(false)}
-            />
-            <TrainingBox type={type} link={link} content={content} />
-          </div>
-          , body as HTMLBodyElement) : null}
-      </>
-    );
-
-  else return (
+  return (
     <>
-      <button className={styles.btn} onClick={() => setIsVisible(true)}>
+      <button className={styles.btn} onClick={() => setIsVisible(true)} title={title ? title : ''}>
         <Image className={styles.btnIcon} src={platformIcon} alt={''} height={50} width={49.5} />
         <p className={styles.btnParagraph}>{name}</p>
       </button>
@@ -63,7 +45,7 @@ const TrainingBtn = ({ type, platformIcon, name, link, content }: Props) => {
             className='absolute z-20 h-12 w-12 top-5 right-5'
             onClick={() => setIsVisible(false)}
           />
-          <TrainingBox type={type} link={link} content={content} />
+          <TrainingBox type={type} link={link} content={content} description={description} />
         </div>
         , body as HTMLBodyElement) : null}
     </>

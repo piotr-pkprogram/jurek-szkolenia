@@ -23,10 +23,11 @@
     @apply absolute left-5 bottom-36;
 
     &::before {
-      @apply content-[''] bg-no-repeat bg-cover absolute -right-3 top-14;
-      background-image: url(../../public/img/down-right-arrow.png);
-      height: 32px;
-      width: 32px;
+      @apply content-[''] bg-no-repeat bg-cover absolute left-4 -top-34 z-10;
+      background-image: url(../../public/img/arrow-book.svg);
+      transform: rotateZ(-15deg);
+      height: 124px;
+      width: 113px;
     }
   }
 }

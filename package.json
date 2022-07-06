@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "browserlist": "^1.0.1",
+    "html-react-parser": "^3.0.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^7.0.4",
     "less-loader": "^10.2.0",
