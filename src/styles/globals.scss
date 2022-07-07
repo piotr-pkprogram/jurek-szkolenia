@@ -73,7 +73,7 @@ div#__next {
 }
 
 main {
-  @apply grid justify-items-center items-center p-6 h-full bg-no-repeat bg-center relative bg-cover;
+  @apply grid justify-items-center items-center py-6 h-full bg-no-repeat bg-center relative bg-cover;
   background-image: url('../../public/img/Background.jpg');
   min-height: 913px;
   padding-bottom: 98px;

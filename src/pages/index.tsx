@@ -2,12 +2,13 @@ import type { NextPage } from 'next';
 import Image from 'next/image';
 import materials from 'public/img/introduction-img.svg';
 import arrow from 'public/img/arrow.svg';
-import { trainings } from 'data/TrainingsLinks';
+import { suppTraining, trainings } from 'data/TrainingsLinks';
 import TrainingBtn from 'src/components/TrainingBtn/TrainingBtn';
 import Book from 'src/components/Book/Book';
 import shortArrow from 'public/img/short-arrow.svg';
 import styles from 'src/styles/index.module.scss';
 import { books } from 'data/books';
+import line from 'public/img/line.svg';
 
 const Home: NextPage = () => {
   return (
@@ -27,6 +28,8 @@ const Home: NextPage = () => {
           {i === trainings.length - 1 ? '' : (<Image src={shortArrow} alt={''} />)}
         </div>
       ))}
+      <div className={styles.line} />
+      <TrainingBtn {...suppTraining} />
       <div className={styles.booksContainer}>
         <p>Rekomendowane książki</p>
         {books.map(b => (
