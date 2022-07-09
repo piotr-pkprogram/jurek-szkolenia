@@ -73,15 +73,15 @@ div#__next {
 }
 
 main {
-  @apply grid justify-items-center items-center py-6 h-full bg-no-repeat bg-top relative bg-cover;
-  background-image: url('../../public/img/Background.png');
+  @apply grid justify-items-center items-center py-6 h-full bg-no-repeat bg-center relative bg-cover;
+  background-image: url('../../public/img/pexels-pixabay-326259.png');
   min-height: 913px;
   padding-bottom: 98px;
   max-width: 1190px;
 
-  @media (min-width: 1010px) {
-    background-size: 1190px auto;
-  }
+  //@media (min-width: 1010px) {
+  //  background-size: 1190px auto;
+  //}
 
   @media (min-width: 1190px) {
     width: 1190px;

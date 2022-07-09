@@ -1,5 +1,5 @@
 .title {
-  @apply text-center text-xl w-full;
+  @apply text-center text-xl w-full bg-white rounded-md p-3;
   max-width: 498px;
   margin-bottom: 40.5px;
 }
@@ -9,7 +9,7 @@
 }
 
 .startP {
-  @apply absolute top-8 left-10 text-lg;
+  @apply absolute top-8 left-10 text-lg text-white;
 }
 
 .introBox {
