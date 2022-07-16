@@ -18,17 +18,13 @@
 
 .left-right-box {
   @apply grid gap-3 bg-white rounded-2xl px-3 py-4 mt-10;
-
-  @media (min-width: 1010px) {
-    @apply mt-0;
-  }
 }
 
 .booksContainer {
   @apply left-right-box;
 
   @media (min-width: 1010px) {
-    @apply absolute left-5;
+    @apply absolute left-5 mt-0;
 
     &::before {
       @apply content-[''] bg-no-repeat bg-cover absolute left-4 -top-34 z-10;
