@@ -1,0 +1,5 @@
+.textLink {
+  @apply text-sm text-main gap-2 xs:text-base hover:opacity-70 transition-opacity focus-visible:outline-none underline;
+
+  max-width: 200px;
+}

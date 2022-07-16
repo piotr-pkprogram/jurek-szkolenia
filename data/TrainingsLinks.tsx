@@ -97,7 +97,7 @@ export const suppTraining =   {
     <hr />
     <br />
     <div>
-      <p className={styles.p}>„Wizja Duolife” Założyciele Piotr Pacyga, Norbert Janeczek</p>
+      <p className={styles.p}>„Zmieniaj świat z Duolife” Założyciele Piotr Pacyga, Norbert Janeczek</p>
       <a className={styles.link} href={'https://youtu.be/kGK5E93HrN8'}>https://youtu.be/kGK5E93HrN8</a>
       <br />
       <br />

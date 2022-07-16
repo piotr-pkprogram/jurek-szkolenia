@@ -8,7 +8,7 @@ import Book from 'src/components/Book/Book';
 import shortArrow from 'public/img/short-arrow.svg';
 import styles from 'src/styles/index.module.scss';
 import { books } from 'data/books';
-import line from 'public/img/line.svg';
+import TextLink from 'src/components/TextLink/TextLink';
 
 const Home: NextPage = () => {
   return (
@@ -30,6 +30,13 @@ const Home: NextPage = () => {
       ))}
       <div className={styles.line} />
       <TrainingBtn {...suppTraining} />
+      <div className={styles.kwżPresentations}>
+        <p>Linki do prezentacji Kwż</p>
+        <TextLink isExternalLink
+                  to={'https://www.loom.com/share/22dc62692189491784a81533c6a0189f'}>https://www.loom.com/share/22dc6269218949178
+          4a81533c6a0189f</TextLink>
+        <TextLink isExternalLink to={'https://youtu.be/5fV1tdCP2qI'}>https://youtu.be/5fV1tdCP2qI</TextLink>
+      </div>
       <div className={styles.booksContainer}>
         <p>Rekomendowane książki</p>
         {books.map(b => (
