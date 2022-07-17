@@ -31,7 +31,7 @@ const Home: NextPage = () => {
       <div className={styles.line} />
       <TrainingBtn {...suppTraining} />
       <div className={styles.kwżPresentations}>
-        <p>Linki do prezentacji Kwż</p>
+        <p>Prezentacji Kwż</p>
         <TextLink isExternalLink
                   to={'https://www.loom.com/share/22dc62692189491784a81533c6a0189f'}>https://www.loom.com/share/22dc6269218949178
           4a81533c6a0189f</TextLink>
