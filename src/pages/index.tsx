@@ -34,7 +34,7 @@ const Home: NextPage = () => {
         <p>Prezentacji Kwż</p>
         <TextLink isExternalLink
                   to={'https://bit.ly/3IILcke'}>https://bit.ly/3IILcke</TextLink>
-        <TextLink isExternalLink to={'https://youtu.be/5fV1tdCP2qI'}>https://youtu.be/5fV1tdCP2qI</TextLink>
+        <TextLink isExternalLink to={'https://bit.ly/3oaWwMM'}>https://bit.ly/3oaWwMM</TextLink>
       </div>
       <div className={styles.booksContainer}>
         <p>Rekomendowane książki</p>

@@ -35,7 +35,7 @@ const TrainingBtn = ({ type, platformIcon, name, link, content, title, descripti
   return (
     <>
       <button className={styles.btn} onClick={() => setIsVisible(true)} title={title ? title : ''}>
-        <Image className={styles.btnIcon} src={platformIcon} alt={''} height={50} width={49.5} />
+        <Image className={styles.btnIcon} src={platformIcon} alt={''} height={50} width={60} />
         <p className={styles.btnParagraph}>{name}</p>
       </button>
       {isVisible && body ? ReactDOM.createPortal(

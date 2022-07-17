@@ -79,7 +79,7 @@ export const suppTraining =   {
   name: 'Materiały Uzupełniające',
   content: <div className={styles.box}>
     <div>
-      <Image className={'rounded-md'} src={konference_dr_kardasz} alt={''} height={50} width={49.5} />
+      <Image className={'rounded-md'} src={konference_dr_kardasz} alt={''} height={50} width={60} />
       <p className={styles.p}>Konferencja dr. Piotra Kardasza kampanii zdrowia „Żyje świadomie</p>
       <a className={styles.link}
          href={'https://youtu.be/tGMu-acd0SU'}>https://youtu.be/tGMu-acd0SU</a>
@@ -91,7 +91,7 @@ export const suppTraining =   {
     <hr />
     <br />
     <div>
-      <Image className={'rounded-md'} src={plan_wynagrodzen} alt={''} height={50} width={49.5} />
+      <Image className={'rounded-md'} src={plan_wynagrodzen} alt={''} height={50} width={60} />
       <p className={styles.p}>Plan Wynagrodzeń</p>
       <a className={styles.link}
          href={'https://www.loom.com/embed/06281ac0fc0d4f5bbe0a7d58d5f633a9'}>https://www.loom.com/embed/06281ac0fc0d4f5bbe0a7d58d5f633a9</a>
@@ -104,7 +104,7 @@ export const suppTraining =   {
     <hr />
     <br />
     <div>
-      <Image className={'rounded-md'} src={zmieniaj_swiat} alt={''} height={50} width={49.5} />
+      <Image className={'rounded-md'} src={zmieniaj_swiat} alt={''} height={50} width={60} />
       <p className={styles.p}>„Zmieniaj świat z Duolife” Założyciele Piotr Pacyga, Norbert Janeczek</p>
       <a className={styles.link} href={'https://youtu.be/kGK5E93HrN8'}>https://youtu.be/kGK5E93HrN8</a>
       <br />
