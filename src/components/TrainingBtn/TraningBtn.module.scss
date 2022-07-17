@@ -11,6 +11,10 @@
   &Paragraph {
     @apply font-semibold text-main text-base text-left not-italic;
   }
+
+  &Icon {
+    @apply rounded-md;
+  }
 }
 
 .modal {

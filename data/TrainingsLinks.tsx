@@ -1,11 +1,16 @@
 import { TrainingTypes } from 'src/components/TrainingBtn/TrainingBtn';
-import ytIcon from 'public/img/youtube-icon.svg';
-import loomIcon from 'public/img/loom-Logo.svg';
-import zoomIcon from 'public/img/zoom-icon.svg';
-import pdfIcon from 'public/img/pdf.svg';
 import documentIcon from 'public/img/document-icon.svg';
 import styles from 'src/styles/trainings.module.scss';
+import wstep from 'public/img/films_icons/wstep_do_klubu_wymarzonego_zycia.jpg';
+import lista_partnerow from 'public/img/films_icons/lista_partnerow_duolife.jpg';
+import umawianie_spotkan from 'public/img/films_icons/umawianie_spotkan.jpg';
+import pdfIcon from 'public/img/pdf.svg';
+import konference_dr_kardasz from 'public/img/films_icons/konferencja_dr_kardasza.jpg';
+import plan_wynagrodzen from 'public/img/films_icons/plan_wynagrodzen.jpg';
+import zmieniaj_swiat from 'public/img/films_icons/zmieniaj_swiat_z_duolife.jpg';
 import { v4 as uuidv4 } from 'uuid';
+import Image from 'next/image';
+import React from 'react';
 
 type Training = {
   id: string;
@@ -22,7 +27,7 @@ export const trainings: Training[] = [
   {
     id: uuidv4(),
     type: TrainingTypes.iframe,
-    platformIcon: loomIcon,
+    platformIcon: wstep,
     name: 'Nagranie omawiające produkty (Jurek Krzewicki)',
     link: 'https://www.loom.com/embed/2374b205158d4673ae986224edbdf2fc',
     description: 'W naszym biznesie bardzo ważne jest zbudowanie wiary w czterech aspektach.<br />' +
@@ -37,7 +42,7 @@ export const trainings: Training[] = [
   {
     id: uuidv4(),
     type: TrainingTypes.video,
-    platformIcon: ytIcon,
+    platformIcon: lista_partnerow,
     name: 'Jak przygotować listę osób znajomych (Paulina i Kamil Nalewajko) ',
     link: 'https://youtu.be/ut7WCISc_Zw',
     title: 'Doskonały materiał tłumaczący to, co jest największym aktywem w naszym biznesie. Czyli osoby, które miałeś okazję poznać jako swoich znajomych. Jak przygotować listę takich osób i odpowiednio z nią pracować. '
@@ -45,7 +50,7 @@ export const trainings: Training[] = [
   {
     id: uuidv4(),
     type: TrainingTypes.video,
-    platformIcon: zoomIcon,
+    platformIcon: umawianie_spotkan,
     name: 'Szkolenie, jak skutecznie umawiać spotkania',
     link: '/uploads/GMT20220602-161014_Recording_1760x900.mp4',
     description: 'Umawianie spotkań, dla wielu nowych osób w naszym biznesie wydaje się być najłatwiejszą i najbardziej banalną rzeczą. Nie ma nic bardziej mylnego. Jeśli nie opanujesz, skutecznych metod umawiania spotkań, to bardzo prawdopodobne jest, że spalisz swoje kontakty, po czym zniechęcisz się do tego biznesu. <br />' +
@@ -74,6 +79,7 @@ export const suppTraining =   {
   name: 'Materiały Uzupełniające',
   content: <div className={styles.box}>
     <div>
+      <Image className={'rounded-md'} src={konference_dr_kardasz} alt={''} height={50} width={49.5} />
       <p className={styles.p}>Konferencja dr. Piotra Kardasza kampanii zdrowia „Żyje świadomie</p>
       <a className={styles.link}
          href={'https://youtu.be/tGMu-acd0SU'}>https://youtu.be/tGMu-acd0SU</a>
@@ -85,6 +91,7 @@ export const suppTraining =   {
     <hr />
     <br />
     <div>
+      <Image className={'rounded-md'} src={plan_wynagrodzen} alt={''} height={50} width={49.5} />
       <p className={styles.p}>Plan Wynagrodzeń</p>
       <a className={styles.link}
          href={'https://www.loom.com/embed/06281ac0fc0d4f5bbe0a7d58d5f633a9'}>https://www.loom.com/embed/06281ac0fc0d4f5bbe0a7d58d5f633a9</a>
@@ -97,6 +104,7 @@ export const suppTraining =   {
     <hr />
     <br />
     <div>
+      <Image className={'rounded-md'} src={zmieniaj_swiat} alt={''} height={50} width={49.5} />
       <p className={styles.p}>„Zmieniaj świat z Duolife” Założyciele Piotr Pacyga, Norbert Janeczek</p>
       <a className={styles.link} href={'https://youtu.be/kGK5E93HrN8'}>https://youtu.be/kGK5E93HrN8</a>
       <br />
