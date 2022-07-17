@@ -33,8 +33,7 @@ const Home: NextPage = () => {
       <div className={styles.kwżPresentations}>
         <p>Prezentacji Kwż</p>
         <TextLink isExternalLink
-                  to={'https://www.loom.com/share/22dc62692189491784a81533c6a0189f'}>https://www.loom.com/share/22dc6269218949178
-          4a81533c6a0189f</TextLink>
+                  to={'https://bit.ly/3IILcke'}>https://bit.ly/3IILcke</TextLink>
         <TextLink isExternalLink to={'https://youtu.be/5fV1tdCP2qI'}>https://youtu.be/5fV1tdCP2qI</TextLink>
       </div>
       <div className={styles.booksContainer}>
