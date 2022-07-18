@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import styles from './TextLink.module.scss';
 import { useRouter } from 'next/router';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
@@ -16,7 +16,7 @@ type Props = {
   isExternalLink?: boolean;
   isRouterLink?: boolean;
   onClick?: any;
-  children?: string | string[];
+  children: string;
 };
 
 const TextLink = ({
@@ -41,8 +41,8 @@ const TextLink = ({
 
   if (isExternalLink)
     return (
-      <CopyToClipboard text={children} className={`${styles.textLink} ${isCopied ? styles.textLinkCopied : ''} ${className}`} onCopy={copyAnimation}>
-        <p>{children}</p>
+      <CopyToClipboard text={children} onCopy={copyAnimation}>
+        <p className={`${styles.textLink} ${isCopied ? styles.textLinkCopied : ''} ${className}`}>{children}</p>
       </CopyToClipboard>
     );
   else if (isRouterLink)
