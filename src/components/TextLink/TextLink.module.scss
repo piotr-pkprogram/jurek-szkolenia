@@ -1,5 +1,17 @@
 .textLink {
-  @apply text-sm text-main gap-2 xs:text-base hover:opacity-70 transition-opacity focus-visible:outline-none underline;
-
+  @apply text-sm text-main gap-2 xs:text-base focus-visible:outline-none underline cursor-pointer relative;
   max-width: 200px;
+
+  &::before {
+    @apply content-[''] bg-no-repeat bg-cover absolute left-12 -top-10 z-10 hidden opacity-0 animate-appear;
+    background-image: url(../../../public/img/copied.svg);
+    height: 43.5px;
+    width: 97.5px;
+  }
+
+  &Copied {
+    &::before {
+      @apply block;
+    }
+  }
 }
