@@ -54,6 +54,7 @@ const Home: NextPage = () => {
       </div>
       <div className={styles.kwżPresentations}>
         <p>Prezentacje Klubu Wymarzonego Życia</p>
+        <p>Jerzy Krzewicki</p>
         <Image src={wstep} alt={''} />
         <TextLink isExternalLink
                   to={'https://bit.ly/3IILcke'}>https://bit.ly/3IILcke</TextLink>
