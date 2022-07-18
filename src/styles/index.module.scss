@@ -24,7 +24,7 @@
   @apply left-right-box;
 
   @media (min-width: 1010px) {
-    @apply absolute left-5 mt-0;
+    @apply absolute left-5 bottom-72;
 
     &::before {
       @apply content-[''] bg-no-repeat bg-cover absolute left-4 -top-34 z-10;
@@ -33,6 +33,23 @@
       height: 124px;
       width: 113px;
     }
+  }
+}
+
+.systemPoints {
+  @apply left-right-box border-2 border-red shadow-red shadow-md;
+  max-width: 345px;
+
+  @media (min-width: 1010px) {
+    @apply absolute left-5 top-40 mt-0;
+  }
+
+  & li {
+    @apply not-italic text-sm font-normal my-2 list-decimal;
+  }
+
+  & ol {
+    @apply ml-4;
   }
 }
 

@@ -33,7 +33,7 @@ module.exports = {
       zinc: colors.zinc,
       neutral: colors.neutral,
       stone: colors.stone,
-      red: colors.red,
+      red: '#FF3C38',
       orange: colors.orange,
       amber: colors.amber,
       yellow: colors.yellow,

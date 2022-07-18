@@ -30,6 +30,26 @@ const Home: NextPage = () => {
       ))}
       <div className={styles.line} />
       <TrainingBtn {...suppTraining} />
+      <div className={styles.systemPoints}>
+        <p>Punkty Systemu</p>
+        <ol>
+          <li>
+            Zarejestruj się i złóż pierwsze zamówienie.
+          </li>
+          <li>
+            Podejmij decyzję o comiesięcznych zakupach w swoim sklepie.
+          </li>
+          <li>
+            Zostań Złotym Liderem Grupy.
+          </li>
+          <li>
+            Pomóż swoim nowym partnerom zostać ZLG
+          </li>
+          <li>
+            Naucz ich tego samego.
+          </li>
+        </ol>
+      </div>
       <div className={styles.kwżPresentations}>
         <p>Prezentacji Kwż</p>
         <TextLink isExternalLink
