@@ -51,7 +51,7 @@ const Home: NextPage = () => {
         </ol>
       </div>
       <div className={styles.kwżPresentations}>
-        <p>Prezentacji Kwż</p>
+        <p>Prezentacje Klubu Wymarzonego Życia</p>
         <TextLink isExternalLink
                   to={'https://bit.ly/3IILcke'}>https://bit.ly/3IILcke</TextLink>
         <TextLink isExternalLink to={'https://bit.ly/3oaWwMM'}>https://bit.ly/3oaWwMM</TextLink>
