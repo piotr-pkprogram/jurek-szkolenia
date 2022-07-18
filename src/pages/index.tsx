@@ -19,7 +19,7 @@ const Home: NextPage = () => {
              alt={'Grafika wspólnie pracującego zespołu przy jakimś biurku i tablicy z rozpisanymi danymi zawierając tekst "O to Twój zestaw  materiałów"'}
              width={292.5} height={183} />
       <div className={styles.introBox}>
-        <Image src={arrow} alt={''} height={93} />
+        <Image src={arrow} alt={''} height={64} />
         <p className={styles.startP}>Zaczynajmy!</p>
       </div>
       {trainings.map((t, i) => (
