@@ -24,6 +24,8 @@
     ]
   },
   "dependencies": {
+    "@svgr/webpack": "^6.2.1",
+    "babel-plugin-react-svg": "^3.0.3",
     "browserlist": "^1.0.1",
     "html-react-parser": "^3.0.0",
     "html-webpack-plugin": "^5.5.0",
