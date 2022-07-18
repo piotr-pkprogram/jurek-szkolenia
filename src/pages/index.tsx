@@ -1,6 +1,8 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
 import materials from 'public/img/introduction-img.svg';
+import wstep from 'public/img/films_icons/wstep_do_klubu_wymarzonego_zycia.jpg';
+import kamila_grusicka from 'public/img/films_icons/prezentacja_kamili_gruszeckiej.jpg';
 import arrow from 'public/img/arrow.svg';
 import { suppTraining, trainings } from 'data/TrainingsLinks';
 import TrainingBtn from 'src/components/TrainingBtn/TrainingBtn';
@@ -52,8 +54,10 @@ const Home: NextPage = () => {
       </div>
       <div className={styles.kwżPresentations}>
         <p>Prezentacje Klubu Wymarzonego Życia</p>
+        <Image src={wstep} alt={''} />
         <TextLink isExternalLink
                   to={'https://bit.ly/3IILcke'}>https://bit.ly/3IILcke</TextLink>
+        <Image src={kamila_grusicka} alt={''} />
         <TextLink isExternalLink to={'https://bit.ly/3oaWwMM'}>https://bit.ly/3oaWwMM</TextLink>
       </div>
       <div className={styles.booksContainer}>

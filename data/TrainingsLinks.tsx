@@ -1,7 +1,7 @@
 import { TrainingTypes } from 'src/components/TrainingBtn/TrainingBtn';
 import documentIcon from 'public/img/document-icon.svg';
 import styles from 'src/styles/trainings.module.scss';
-import wstep from 'public/img/films_icons/wstep_do_klubu_wymarzonego_zycia.jpg';
+import wstep from 'public/img/films_icons/produkty_duolife.jpg';
 import lista_partnerow from 'public/img/films_icons/lista_partnerow_duolife.jpg';
 import umawianie_spotkan from 'public/img/films_icons/umawianie_spotkan.jpg';
 import pdfIcon from 'public/img/pdf.svg';
