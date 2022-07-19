@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './TextLink.module.scss';
 import { useRouter } from 'next/router';
-import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 enum BtnTypes {
   Button = 'button',
@@ -16,7 +15,7 @@ type Props = {
   isExternalLink?: boolean;
   isRouterLink?: boolean;
   onClick?: any;
-  children: string;
+  children?: JSX.Element[] | JSX.Element | string | string[];
 };
 
 const TextLink = ({
@@ -29,21 +28,12 @@ const TextLink = ({
   children
 }: Props) => {
   const router = useRouter();
-  const [isCopied, setIsCopied] = useState(false);
-
-  const copyAnimation = () => {
-    setIsCopied(true)
-
-    setTimeout(() => {
-      setIsCopied(false);
-    }, 1500);
-  }
 
   if (isExternalLink)
     return (
-      <CopyToClipboard text={children} onCopy={copyAnimation}>
-        <p className={`${styles.textLink} ${isCopied ? styles.textLinkCopied : ''} ${className}`}>{children}</p>
-      </CopyToClipboard>
+      <a className={`${styles.textLink} ${className}`} href={to} target="_blank" rel="noopener noreferrer">
+        {children}
+      </a>
     );
   else if (isRouterLink)
     return (

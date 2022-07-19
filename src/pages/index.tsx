@@ -10,6 +10,7 @@ import Book from 'src/components/Book/Book';
 import shortArrow from 'public/img/short-arrow.svg';
 import styles from 'src/styles/index.module.scss';
 import { books } from 'data/books';
+import CopyLink from 'src/components/CopyLink/CopyLink';
 import TextLink from 'src/components/TextLink/TextLink';
 
 const Home: NextPage = () => {
@@ -55,11 +56,14 @@ const Home: NextPage = () => {
       <div className={styles.kwżPresentations}>
         <p>Prezentacje Klubu Wymarzonego Życia</p>
         <p>Jerzy Krzewicki</p>
-        <Image src={wstep} alt={''} />
-        <TextLink isExternalLink
-                  to={'https://bit.ly/3IILcke'}>https://bit.ly/3IILcke</TextLink>
-        <Image src={kamila_grusicka} alt={''} />
-        <TextLink isExternalLink to={'https://bit.ly/3oaWwMM'}>https://bit.ly/3oaWwMM</TextLink>
+        <TextLink to={'https://bit.ly/3IILcke'} isExternalLink>
+          <Image src={wstep} alt={''} />
+        </TextLink>
+        <CopyLink>https://bit.ly/3IILcke</CopyLink>
+        <TextLink to={'https://bit.ly/3oaWwMM'} isExternalLink>
+          <Image src={kamila_grusicka} alt={''} />
+        </TextLink>
+        <CopyLink>https://bit.ly/3oaWwMM</CopyLink>
       </div>
       <div className={styles.booksContainer}>
         <p>Rekomendowane książki</p>
