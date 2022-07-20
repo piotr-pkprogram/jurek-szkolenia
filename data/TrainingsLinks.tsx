@@ -11,6 +11,7 @@ import zmieniaj_swiat from 'public/img/films_icons/zmieniaj_swiat_z_duolife.jpg'
 import { v4 as uuidv4 } from 'uuid';
 import Image from 'next/image';
 import React from 'react';
+import TextLink from 'src/components/TextLink/TextLink';
 
 type Training = {
   id: string;
@@ -81,8 +82,8 @@ export const suppTraining =   {
     <div>
       <Image className={'rounded-md'} src={konference_dr_kardasz} alt={''} height={50} width={70} />
       <p className={styles.p}>Konferencja dr. Piotra Kardasza kampanii zdrowia „Żyje świadomie</p>
-      <a className={styles.link}
-         href={'https://youtu.be/tGMu-acd0SU'}>https://youtu.be/tGMu-acd0SU</a>
+      <TextLink className={styles.link}
+         to={'https://youtu.be/tGMu-acd0SU'} isExternalLink>https://youtu.be/tGMu-acd0SU</TextLink>
       <br />
       <br />
       <p className={styles.p}>Ten materiał często działa jak magiczna różdżka. dr h.c Piotr Kardasz w fenomenalny sposób, opowiada o tym, co dobrego natura może zrobić dla naszego zdrowia, po to, by je zachować lub odzyskać. Nie musisz mówić o żadnych produktach, ani suplementach. O żadnej sprzedaży. Wystarczy zapromujesz osobom, które interesują się zdrowiem, dlaczego warto jest ten wykład obejrzeć, to po obejrzeniu, wielu z nich, samych do Ciebie wróci z wyborem produktów, które będą chcieli zamówić.</p>
@@ -93,8 +94,8 @@ export const suppTraining =   {
     <div>
       <Image className={'rounded-md'} src={plan_wynagrodzen} alt={''} height={50} width={70} />
       <p className={styles.p}>Plan Wynagrodzeń</p>
-      <a className={styles.link}
-         href={'https://www.loom.com/embed/06281ac0fc0d4f5bbe0a7d58d5f633a9'}>https://www.loom.com/embed/06281ac0fc0d4f5bbe0a7d58d5f633a9</a>
+      <TextLink className={styles.link}
+         to={'https://www.loom.com/embed/06281ac0fc0d4f5bbe0a7d58d5f633a9'} isExternalLink>https://www.loom.com/embed/06281ac0fc0d4f5bbe0a7d58d5f633a9</TextLink>
       <br />
       <br />
       <p className={styles.p}>Tu znajdziesz szczegółowo omówiony planu wynagrodzeń. Z tego filmu dowiesz się, ile
@@ -106,7 +107,7 @@ export const suppTraining =   {
     <div>
       <Image className={'rounded-md'} src={zmieniaj_swiat} alt={''} height={50} width={70} />
       <p className={styles.p}>„Zmieniaj świat z Duolife” Założyciele Piotr Pacyga, Norbert Janeczek</p>
-      <a className={styles.link} href={'https://youtu.be/kGK5E93HrN8'}>https://youtu.be/kGK5E93HrN8</a>
+      <TextLink className={styles.link} to={'https://youtu.be/kGK5E93HrN8'} isExternalLink>https://youtu.be/kGK5E93HrN8</TextLink>
       <br />
       <br />
       <p className={styles.p}>To doskonały materiał, przedstawiający wizję założycie na najbliższe lata. Jak wiesz,
