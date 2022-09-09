@@ -23,7 +23,7 @@ export const books: Book[] = [
   },
   {
     id: uuidv4(),
-    name: 'Atomowe nawyki - Robert Kiyosaki',
+    name: 'Atomowe nawyki - James Clear',
     image: book5,
     link: 'https://www.empik.com/atomowe-nawyki-drobne-zmiany-niezwykle-efekty-clear-james,p1230627986,ksiazka-p?cq_src=google_ads&cq_cmp=11284533004&cq_term=&cq_plac=&cq_net=u&cq_plt=gp&gclid=CjwKCAjwvNaYBhA3EiwACgndgthnK-g-8bK6p7Yoo8W4EOYX7pzpnHRIH2R2gGcllUga4kHwZMteQxoCR-AQAvD_BwE&gclsrc=aw.ds'
   },
