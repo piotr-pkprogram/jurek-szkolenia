@@ -9,6 +9,7 @@ import shortArrow from 'public/img/short-arrow.svg';
 import styles from 'src/styles/index.module.scss';
 import { books } from 'data/books';
 import CopyLink from 'src/components/CopyLink/CopyLink';
+import TextLink from 'src/components/TextLink/TextLink';
 import ImageTrainingBtn from 'src/components/ImageTrainingBtn/ImageTrainingBtn';
 import wstep from 'public/img/films_icons/wstep_do_klubu_wymarzonego_zycia.jpg';
 import kamila_grusicka from 'public/img/films_icons/prezentacja_kamili_gruszeckiej.jpg';
@@ -66,7 +67,7 @@ const Home: NextPage = () => {
         <CopyLink>https://www.facebook.com/groups/1199293030895148</CopyLink>
         <p>Historie produktowe</p>
         <Image className={'cursor-pointer transition-opacity hover:opacity-75'} src={testimonials} alt={''} />
-        <CopyLink>http://testimonial.best/</CopyLink>
+        <TextLink to="http://testimonial.best/" isExternalLink>http://testimonial.best/</TextLink>
       </div>
       <div className={styles.booksContainer}>
         <p>Rekomendowane książki</p>
