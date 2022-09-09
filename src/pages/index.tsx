@@ -57,10 +57,12 @@ const Home: NextPage = () => {
       <div className={styles.kwżPresentations}>
         <p>Prezentacje Klubu Wymarzonego Życia</p>
         <p>Jerzy Krzewicki</p>
-          <ImageTrainingBtn type={TrainingTypes.iframe} img={wstep} link={'https://www.loom.com/embed/22dc62692189491784a81533c6a0189f'} />
+        <ImageTrainingBtn type={TrainingTypes.iframe} img={wstep} link={'https://www.loom.com/embed/22dc62692189491784a81533c6a0189f'} />
         <CopyLink>https://bit.ly/3IILcke</CopyLink>
         <ImageTrainingBtn type={TrainingTypes.iframe} img={kamila_grusicka} link={'https://www.youtube.com/embed/5fV1tdCP2qI'} />
         <CopyLink>https://bit.ly/3oaWwMM</CopyLink>
+        <p>Grupa Klubu Wymarzonego Życia na Facebooku:</p>
+        <CopyLink>https://www.facebook.com/groups/1199293030895148</CopyLink>
       </div>
       <div className={styles.booksContainer}>
         <p>Rekomendowane książki</p>
