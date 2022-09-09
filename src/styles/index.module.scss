@@ -73,3 +73,8 @@
     max-width: none;
   }
 }
+
+.textLink {
+  @apply text-sm text-main gap-2 xs:text-base focus-visible:outline-none underline cursor-pointer relative;
+  max-width: 200px;
+}
