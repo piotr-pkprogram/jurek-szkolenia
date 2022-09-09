@@ -64,10 +64,10 @@ const Home: NextPage = () => {
         <ImageTrainingBtn type={TrainingTypes.iframe} img={kamila_grusicka} link={'https://www.youtube.com/embed/5fV1tdCP2qI'} />
         <CopyLink>https://bit.ly/3oaWwMM</CopyLink>
         <p>Grupa Klubu Wymarzonego Życia na Facebooku:</p>
-        <CopyLink>https://www.facebook.com/groups/1199293030895148</CopyLink>
+        <TextLink to="https://www.facebook.com/groups/1199293030895148/" isExternalLink>https://www.facebook.com/groups/1199293030895148/</TextLink>
         <p>Historie produktowe</p>
         <Image className={'cursor-pointer transition-opacity hover:opacity-75'} src={testimonials} alt={''} />
-        <TextLink to="http://testimonial.best/" isExternalLink>http://testimonial.best/</TextLink>
+        <CopyLink>http://testimonial.best/</CopyLink>
       </div>
       <div className={styles.booksContainer}>
         <p>Rekomendowane książki</p>
