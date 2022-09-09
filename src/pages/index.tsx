@@ -12,6 +12,7 @@ import CopyLink from 'src/components/CopyLink/CopyLink';
 import ImageTrainingBtn from 'src/components/ImageTrainingBtn/ImageTrainingBtn';
 import wstep from 'public/img/films_icons/wstep_do_klubu_wymarzonego_zycia.jpg';
 import kamila_grusicka from 'public/img/films_icons/prezentacja_kamili_gruszeckiej.jpg';
+import testimonials from 'public/img/testimonials.jpg';
 
 const Home: NextPage = () => {
 
@@ -63,6 +64,9 @@ const Home: NextPage = () => {
         <CopyLink>https://bit.ly/3oaWwMM</CopyLink>
         <p>Grupa Klubu Wymarzonego Życia na Facebooku:</p>
         <CopyLink>https://www.facebook.com/groups/1199293030895148</CopyLink>
+        <p>Historie produktowe</p>
+        <Image className={'cursor-pointer transition-opacity hover:opacity-75'} src={testimonials} alt={''} />
+        <CopyLink>http://testimonial.best/</CopyLink>
       </div>
       <div className={styles.booksContainer}>
         <p>Rekomendowane książki</p>
