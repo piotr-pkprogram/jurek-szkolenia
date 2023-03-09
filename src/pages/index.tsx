@@ -8,7 +8,7 @@ import Book from 'src/components/Book/Book';
 import shortArrow from 'public/img/short-arrow.svg';
 import styles from 'src/styles/index.module.scss';
 import { books } from 'data/books';
-import CopyLink from 'src/components/CopyLink/CopyLink';
+import TextLink from 'src/components/TextLink/TextLink';
 import ImageTrainingBtn from 'src/components/ImageTrainingBtn/ImageTrainingBtn';
 import wstep from 'public/img/films_icons/wstep_do_klubu_wymarzonego_zycia.jpg';
 import kamila_grusicka from 'public/img/films_icons/prezentacja_kamili_gruszeckiej.jpg';
@@ -57,10 +57,10 @@ const Home: NextPage = () => {
       <div className={styles.kwżPresentations}>
         <p>Prezentacje Klubu Wymarzonego Życia</p>
         <p>Jerzy Krzewicki</p>
-          <ImageTrainingBtn type={TrainingTypes.iframe} img={wstep} link={'https://www.loom.com/embed/22dc62692189491784a81533c6a0189f'} />
-        <CopyLink>https://bit.ly/3IILcke</CopyLink>
-        <ImageTrainingBtn type={TrainingTypes.iframe} img={kamila_grusicka} link={'https://www.youtube.com/embed/5fV1tdCP2qI'} />
-        <CopyLink>https://bit.ly/3oaWwMM</CopyLink>
+          <ImageTrainingBtn type={TrainingTypes.iframe} img={wstep} link={'https://www.loom.com/embed/de88768516204e4f880e80ef00797f81'} />
+        <TextLink isExternalLink to="https://bit.ly/3IILcke">https://bit.ly/3IILcke</TextLink>
+        <ImageTrainingBtn type={TrainingTypes.iframe} img={kamila_grusicka} link={'https://www.youtube.com/embed/P_4btq8ONVE'} />
+        <TextLink isExternalLink to="https://bit.ly/3IILcke">https://bit.ly/3oaWwMM</TextLink>
       </div>
       <div className={styles.booksContainer}>
         <p>Rekomendowane książki</p>
